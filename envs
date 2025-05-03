@@ -1,9 +1,1 @@
-Each tool has ther own environment:
 
-**COMMOT** :
-Requir python 3.8 
-Test:
-python -c "import commot; print('COMMOT is installed')"
-Output: COMMOT is installed 
-Or
-pip show commot
