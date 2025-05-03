@@ -24,4 +24,5 @@ To compare and evaluate tools that perform CCC inference directly on native spat
 
 Each tool has its own Conda environment. See [envs/](envs/) for setup instructions.
 
+Copyright (c) 2025 Akram Abushmais
 
