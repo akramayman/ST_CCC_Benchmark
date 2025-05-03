@@ -1,7 +1,11 @@
 # ST-CCC Benchmark
 
-Benchmark and compare computational tools that infer **cell–cell communication (CCC)** using **Spatial Transcriptomics** data directly—without relying on single-cell RNA-seq input.
-The focus is strictly on native ST tools that accept spatial data from the [MOSTA](https://db.cngb.org/stomics/mosta/download/) database.
+**Spatial transcriptomics (ST)** technologies have transformed our understanding of gene expression in tissues by preserving spatial context. However, understanding how cells communicate with each other—especially through ligand-receptor interactions—in these spatial environments remains a computational challenge.
+
+While many tools infer **cell–cell communication (CCC)** from single-cell RNA-seq (scRNA-seq), these approaches often ignore spatial proximity, leading to biologically incomplete results. To address this, a new wave of tools has emerged that work natively on spatial transcriptomics data.
+
+This benchmark systematically evaluates those native **Spatial Transcriptomis** tools that perform CCC inference directly from spatial transcriptomic datasets—without relying on external single-cell references.
+
 
 ## 📌 Objective
 
