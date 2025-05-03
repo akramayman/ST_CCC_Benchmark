@@ -12,13 +12,13 @@ To compare and evaluate tools that perform CCC inference directly on native spat
 |----------------|-----------|----------|--------|
 | COMMOT         | ✅        | Python   | [COMMOT](https://github.com/zcang/COMMOT) |
 | stLearn        | ✅        | Python   | [stLearn](https://github.com/BiomedicalMachineLearning/stLearn) |
-| SpatialScope   | ✅        | Python   | [SpatialScope](https://github.com/zhanglabtools/SpatialScope) |
-| spaCI          | ✅        | Python   | [spaCI](https://github.com/ma-compbio/spaCI) |
-| Spacia         | ✅        | Python   | [Spacia](https://github.com/lululxvi/spacia) |
+| SpatialScope   | ✅        | Python   | [SpatialScope](https://github.com/YangLabHKUST/SpatialScope) |
+| spaCI          | ✅        | Python   | [spaCI](https://github.com/QSong-github/spaCI) |
+| Spacia         | ✅        | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
 | MISTy          | ✅        | R        | [MISTy](https://github.com/saezlab/MISTy) |
 | NCEM           | ✅        | Python   | [NCEM](https://github.com/theislab/ncem) |
-| Gitto          | ✅        | Python   | [Gitto](https://github.com/fanglab/gitto) |
-| CellCharter    | ✅        | Python   | [CellCharter](https://github.com/ComputationalSystemsBiology/CellCharter) |
+| Gitto          | ✅        | Python   | [Gitto](https://github.com/drieslab/Giotto) |
+| CellCharter    | ✅        | Python   | [CellCharter](https://github.com/CSOgroup/cellcharter) |
 
 ## 📦 Installation
 
