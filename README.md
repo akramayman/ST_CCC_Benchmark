@@ -1,6 +1,7 @@
 # ST-CCC Benchmark
 
-This repository benchmarks native **Spatial Transcriptomics** tools for **cell–cell communication (CCC)** inference using real spatial transcriptomics data from the [MOSTA](https://db.cngb.org/stomics/mosta/download/) database.
+Benchmark and compare computational tools that infer **cell–cell communication (CCC)** using **Spatial Transcriptomics** data directly—without relying on single-cell RNA-seq input.
+The focus is strictly on native ST tools that accept spatial data from the [MOSTA](https://db.cngb.org/stomics/mosta/download/) database.
 
 ## 📌 Objective
 
