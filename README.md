@@ -16,7 +16,6 @@ To compare and evaluate tools that perform CCC inference directly on native spat
 | Tool           | ST-Native | Language | GitHub |
 |----------------|-----------|----------|--------|
 | COMMOT         | ✅        | Python   | [COMMOT](https://github.com/zcang/COMMOT) |
-| stLearn        | ✅        | Python   | [stLearn](https://github.com/BiomedicalMachineLearning/stLearn) |
 | SpatialScope   | ✅        | Python   | [SpatialScope](https://github.com/YangLabHKUST/SpatialScope) |
 | spaCI          | ✅        | Python   | [spaCI](https://github.com/QSong-github/spaCI) |
 | Spacia         | ✅        | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
