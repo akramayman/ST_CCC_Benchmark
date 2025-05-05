@@ -22,7 +22,7 @@ To compare and evaluate tools that perform CCC inference directly on native spat
 | NCEM           | ✅        | Python   | [NCEM](https://github.com/theislab/ncem) |
 | CellCharter    | ✅        | Python   | [CellCharter](https://github.com/CSOgroup/cellcharter) |
 | MISTy          | ✅        | R        | [MISTy](https://github.com/saezlab/MISTy) |
-| Gitto          | ✅        | R        | [Gitto](https://github.com/drieslab/Giotto) |
+
 
 ## 📦 Installation
 
