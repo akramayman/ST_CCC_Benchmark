@@ -21,6 +21,7 @@ To compare and evaluate tools that perform CCC inference directly on native spat
 | Spacia         | ✅        | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
 | NCEM           | ✅        | Python   | [NCEM](https://github.com/theislab/ncem) |
 | CellCharter    | ✅        | Python   | [CellCharter](https://github.com/CSOgroup/cellcharter) |
+| stLearn        | ✅        | Python   | [stLearn](https://github.com/BiomedicalMachineLearning/stLearn) |
 | MISTy          | ✅        | R        | [MISTy](https://github.com/saezlab/MISTy) |
 
 
