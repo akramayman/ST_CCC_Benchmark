@@ -9,7 +9,7 @@ This benchmark systematically evaluates those native **Spatial Transcriptomis** 
 
 ## 📌 Objective
 
-To compare and evaluate tools that perform CCC inference directly on native spatial transcriptomics (ST) data.
+To compare and evaluate tools that perform CCC inference directly on native simulation data and two kind of spatial transcriptomics (ST) Imageing (Vizgen) and Sequenceing data (MOSTA).
 
 ## 🧰 Tools Included
 
