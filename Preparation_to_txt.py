@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # CSV Gene Expression and Metadata Processor with CPM Normalization
+# # CSV Gene Expression and Metadata Processor
 
 # ### Import packages 
 
@@ -27,10 +27,6 @@ def process_sample(gene_expr_path, metadata_path, output_dir, sample_name="sampl
     meta_raw = pd.read_csv(metadata_path, index_col=0)
     expr.index = expr.index.astype(str)
     meta_raw.index = meta_raw.index.astype(str)
-
-    # Normalize gene expression to CPM
-    cpm = expr.div(expr.sum(axis=1), axis=0) * 1e6
-    log_cpm = np.log1p(cpm)
 
     # Rename coordinates columns as 'X' and 'Y' in metadata file
     meta_raw = meta_raw.rename(columns={"center_x": "X", "center_y": "Y"})
