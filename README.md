@@ -15,20 +15,42 @@ To compare and evaluate tools that perform CCC inference directly on native simu
 
 | Tool           | ST-Native | Language | GitHub |
 |----------------|-----------|----------|--------|
-| COMMOT         | ✅        | Python   | [COMMOT](https://github.com/zcang/COMMOT) |
-| spaCI          | ✅        | Python   | [spaCI](https://github.com/QSong-github/spaCI) |
-| Spacia         | ✅        | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
+| COMMOT           | ✅        | Python   | [COMMOT](https://github.com/zcang/COMMOT) |
+| spaCI            | ✅        | Python   | [spaCI](https://github.com/QSong-github/spaCI) |
+| Spacia           | ✅        | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
+| VGAE-CCI         | ✅        | Python   | [VGAE-CCI](https://github.com/zhangxiangz/VGAECCI) |
 
 
-## 📦 Installation
+## Spatial Transcriptomics Format Converter
 
-Each tool has its own Conda environment.
+A Python utility for converting spatial transcriptomics datasets between common formats (CSV, H5AD, TXT, and SpaCI-compatible CSV) with optional CPM + log1p normalization for raw counts. This tool ensures proper handling of spatial coordinates and metadata, making datasets ready for downstream analysis.
 
-- Detailed installation instructions for each tool are in Tools.
-  
-    -Environment (.yml) file
-  
-    -Instructions INSTALL.md
-  
+### Usage Examples
+
+Convert a CSV dataset to TXT with normalization:
+
+python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized
+
+Convert an H5AD file to SpaCI CSV without normalization:
+
+python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name
+
+### Arguments
+> --from : Input format (csv or h5ad)
+
+> --to : Output format (txt, h5ad, csv, csv_spaCI)
+
+> --expr : Path to gene expression CSV (required for CSV input)
+
+> --meta : Path to metadata CSV (required for CSV input)
+
+> --h5ad : Path to H5AD file (required for H5AD input)
+
+> --out : Output directory (default: ./output)
+
+> --name : Sample name prefix (default: sample)
+
+> --normalized : Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
+
 Copyright (c) 2025 Akram Abushmais
 
