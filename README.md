@@ -56,5 +56,7 @@ python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --
 
  --normalized : Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
 
-Copyright (c) 2025 Akram Abushmais
+
+
+### Copyright (c) 2025 Akram Abushmais
 
