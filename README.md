@@ -25,19 +25,6 @@ To compare and evaluate tools that perform CCC inference directly on native simu
 
 A Python utility for converting spatial transcriptomics datasets between common formats (CSV, H5AD, TXT, and SpaCI-compatible CSV) with optional CPM + log1p normalization for raw counts. This tool ensures proper handling of spatial coordinates and metadata, making datasets ready for downstream analysis.
 
-### Usage Examples
-
-### Convert a CSV dataset to TXT with normalization:
-
-```bash
-python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized 
-```
-
-### Convert an H5AD file to SpaCI CSV without normalization:
-
-```bash
-python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name 
-```
 
 ### Arguments
  --from : Input format (csv or h5ad)
@@ -55,6 +42,20 @@ python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --
  --name : Sample name prefix (default: sample)
 
  --normalized : Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
+ 
+### Usage Examples
+
+### Convert a CSV dataset to TXT with normalization:
+
+```bash
+python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized 
+```
+
+### Convert an H5AD file to SpaCI CSV without normalization:
+
+```bash
+python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name 
+```
 
 
 
