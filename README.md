@@ -27,21 +27,21 @@ A Python utility for converting spatial transcriptomics datasets between common 
 
 
 ### Arguments
- --from : Input format (csv or h5ad)
+ ```--from ```: Input format (csv or h5ad)
 
- --to : Output format (txt, h5ad, csv, csv_spaCI)
+ ```--to ```: Output format (txt, h5ad, csv, csv_spaCI)
 
- --expr : Path to gene expression CSV (required for CSV input)
+ ```--expr ```: Path to gene expression CSV (required for CSV input)
 
- --meta : Path to metadata CSV (required for CSV input)
+``` --meta ```: Path to metadata CSV (required for CSV input)
 
- --h5ad : Path to H5AD file (required for H5AD input)
+ ```--h5ad ```: Path to H5AD file (required for H5AD input)
 
- --out : Output directory (default: ./output)
+ ```--out ```: Output directory (default: ./output)
 
- --name : Sample name prefix (default: sample)
+ ```--name``` : Sample name prefix (default: sample)
 
- --normalized : Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
+ ```--normalized ```: Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
  
 ### Usage Examples
 
