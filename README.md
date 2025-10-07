@@ -59,5 +59,5 @@ python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --
 
 
 
-### Copyright (c) 2025 Akram Abushmais
+Copyright (c) Akram Abushmais
 
