@@ -29,11 +29,13 @@ A Python utility for converting spatial transcriptomics datasets between common 
 
 Convert a CSV dataset to TXT with normalization:
 
-``` python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized ```
+``` bash
+python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized 
 
 Convert an H5AD file to SpaCI CSV without normalization:
 
-``` python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name ```
+``` bash
+python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name 
 
 ### Arguments
 * --from : Input format (csv or h5ad)
