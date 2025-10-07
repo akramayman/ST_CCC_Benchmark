@@ -29,28 +29,28 @@ A Python utility for converting spatial transcriptomics datasets between common 
 
 Convert a CSV dataset to TXT with normalization:
 
-python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized
+``` python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta meta.csv --out output_dir --name sample_name --normalized ```
 
 Convert an H5AD file to SpaCI CSV without normalization:
 
-python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name
+``` python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name ```
 
 ### Arguments
-> --from : Input format (csv or h5ad)
+* --from : Input format (csv or h5ad)
 
-> --to : Output format (txt, h5ad, csv, csv_spaCI)
+* --to : Output format (txt, h5ad, csv, csv_spaCI)
 
-> --expr : Path to gene expression CSV (required for CSV input)
+* --expr : Path to gene expression CSV (required for CSV input)
 
-> --meta : Path to metadata CSV (required for CSV input)
+* --meta : Path to metadata CSV (required for CSV input)
 
-> --h5ad : Path to H5AD file (required for H5AD input)
+* --h5ad : Path to H5AD file (required for H5AD input)
 
-> --out : Output directory (default: ./output)
+* --out : Output directory (default: ./output)
 
-> --name : Sample name prefix (default: sample)
+* --name : Sample name prefix (default: sample)
 
-> --normalized : Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
+* --normalized : Apply CPM + log1p normalization (only for TXT output; if omitted, assumes data is already normalized)
 
 Copyright (c) 2025 Akram Abushmais
 
