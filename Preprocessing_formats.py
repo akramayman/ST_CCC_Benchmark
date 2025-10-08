@@ -129,6 +129,12 @@ def process_csv_to_csvspaCI(gene_expr_path, metadata_path, output_dir, sample_na
     else:
         raise ValueError("❌ Metadata file must contain a 'cell_type' or 'celltype' column.")
 
+    meta = meta.rename(columns={
+        "X": "x",
+        "Y": "y",
+        "cell_type": "type"
+    })
+
     # --- Save results ---
     counts_file = os.path.join(output_dir, f"{sample_name}_counts.csv")
     meta_file   = os.path.join(output_dir, f"{sample_name}_meta.csv")
@@ -332,7 +338,11 @@ def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
 
     # Keep only necessary columns
     meta = meta[["X", "Y", "cell_type"]]
-
+    meta = meta.rename(columns={
+        "X": "x",
+        "Y": "y",
+        "cell_type": "type"
+    })
     # Convert meta index (cell IDs) to string explicitly
     meta.index = meta.index.astype(str)
 
