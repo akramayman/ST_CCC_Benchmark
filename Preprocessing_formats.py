@@ -230,7 +230,7 @@ def process_h5ad_to_txt(h5ad_path, output_dir, sample_name="sample", normalized=
 
 def process_h5ad_to_csv(h5ad_path, output_dir, sample_name="sample"):
     """
-    Process a .h5ad file to extract gene expression and spatial metadata as txt for Spacia input.
+    Process a .h5ad file to extract gene expression and spatial metadata as csv.
     """
     # Load the h5ad file
     adata = anndata.read_h5ad(h5ad_path)
@@ -291,7 +291,7 @@ def process_h5ad_to_csv(h5ad_path, output_dir, sample_name="sample"):
 
 def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
     """
-    Process a .h5ad file to extract gene expression and spatial metadata as txt for Spacia input.
+    Process a .h5ad file to extract gene expression and spatial metadata as csv for spaCI.
     """
     # Load the h5ad file
     adata = anndata.read_h5ad(h5ad_path)
