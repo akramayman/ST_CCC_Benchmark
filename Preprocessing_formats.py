@@ -102,7 +102,7 @@ def process_csv_to_csvspaCI(gene_expr_path, metadata_path, output_dir, sample_na
     meta_raw.index = meta_raw.index.astype(str)
 
     # If expression rows (index) don't match metadata index (cells), and columns do → transpose
-    if set(expr.index).intersection(meta_raw.index):
+    if expr.shape[0]==meta_raw.shape[0]:
         print("🔄 Detected cells as rows and genes as columns — transposing expression matrix.")
         expr = expr.T
         expr.index = expr.index.str.upper()
