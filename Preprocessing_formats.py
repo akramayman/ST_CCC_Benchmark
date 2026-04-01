@@ -302,14 +302,14 @@ def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
         index=adata.obs_names,
         columns=adata.var_names
     )
-    expr.index = expr.index.str.upper()
+    
     # --- Check orientation: if rows = cells, columns = genes → transpose ---
     if set(expr.index).intersection(adata.obs_names):
         print("🔄 Detected cells as rows and genes as columns — transposing expression matrix.")
         expr = expr.T
     else:
         print("✅ Expression matrix orientation looks correct (genes as rows, cells as columns).")
-
+    expr.index = expr.index.str.upper()
 
     # Copy metadata
     meta = adata.obs.copy()
@@ -351,8 +351,8 @@ def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
     meta_file   = os.path.join(output_dir, f"{sample_name}_meta.csv")
 
     # Save expression and metadata files
-    expr.to_csv(counts_file, sep="\t", index=True, index_label=None)
-    meta.to_csv(meta_file, sep="\t", index=True, index_label=None)
+    expr.to_csv(counts_file, sep=",", index=True, index_label=None)
+    meta.to_csv(meta_file, sep=",", index=True, index_label=None)
 
     print(f"✅ Saved: {counts_file} and {meta_file}")
 
