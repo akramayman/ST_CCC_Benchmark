@@ -230,7 +230,7 @@ def process_h5ad_to_txt(h5ad_path, output_dir, sample_name="sample", normalized=
 
 def process_h5ad_to_csv(h5ad_path, output_dir, sample_name="sample"):
     """
-    Process a .h5ad file to extract gene expression and spatial metadata as csv.
+    Process a .h5ad file to extract gene expression and spatial metadata as txt for Spacia input.
     """
     # Load the h5ad file
     adata = anndata.read_h5ad(h5ad_path)
@@ -278,8 +278,8 @@ def process_h5ad_to_csv(h5ad_path, output_dir, sample_name="sample"):
     meta_file   = os.path.join(output_dir, f"{sample_name}_meta.csv")
 
     # Save expression and metadata files
-    expr.to_csv(counts_file, sep="\t", index=True, index_label=None)
-    meta.to_csv(meta_file, sep="\t", index=True, index_label=None)
+    expr.to_csv(counts_file, sep=",", index=False)
+    meta.to_csv(meta_file, index=False)
 
     print(f"✅ Saved: {counts_file} and {meta_file}")
 
@@ -291,7 +291,7 @@ def process_h5ad_to_csv(h5ad_path, output_dir, sample_name="sample"):
 
 def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
     """
-    Process a .h5ad file to extract gene expression and spatial metadata as csv for spaCI.
+    Process a .h5ad file to extract gene expression and spatial metadata as txt for Spacia input.
     """
     # Load the h5ad file
     adata = anndata.read_h5ad(h5ad_path)
@@ -309,8 +309,8 @@ def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
         expr = expr.T
     else:
         print("✅ Expression matrix orientation looks correct (genes as rows, cells as columns).")
-    expr.index = expr.index.str.upper()
 
+    expr.index = expr.index.str.upper()
     # Copy metadata
     meta = adata.obs.copy()
 
@@ -351,8 +351,8 @@ def process_h5ad_to_csvspaCI(h5ad_path, output_dir, sample_name="sample"):
     meta_file   = os.path.join(output_dir, f"{sample_name}_meta.csv")
 
     # Save expression and metadata files
-    expr.to_csv(counts_file, sep=",", index=True, index_label=None)
-    meta.to_csv(meta_file, sep=",", index=True, index_label=None)
+    expr.to_csv(counts_file,  index=True)
+    meta.to_csv(meta_file, index=True)
 
     print(f"✅ Saved: {counts_file} and {meta_file}")
 
@@ -397,7 +397,7 @@ def convert_file(input_format, output_format, gene_expr_path=None, metadata_path
     # { H5AD → CSV }
     elif from_format == "h5ad" and to_format == "csv":
         process_h5ad_to_csv(h5ad_path, output_dir, sample_name)
-        print(f"✅ Saved csv file for {sample_name}")
+        print(f"✅ Saved csv file,VGAE for {sample_name}")
 
     # { H5AD → CSV SpaCI }
     elif from_format == "h5ad" and to_format == "csv_spaci":
