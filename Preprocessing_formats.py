@@ -12,7 +12,7 @@ import anndata
 import argparse
 
 
-# ### Input mode is "csv" expression and meta data, and the output is txt files with log1 normalization
+# ### Input mode is "csv" expression and metadata, and the output is txt files with log1 normalization
 
 # In[ ]:
 
@@ -279,7 +279,7 @@ def process_h5ad_to_csv(h5ad_path, output_dir, sample_name="sample"):
 
     # Save expression and metadata files
     expr.to_csv(counts_file, sep=",", index=False)
-    meta.to_csv(meta_file, index=False)
+    meta.to_csv(meta_file, sep="\t", index=True)
 
     print(f"✅ Saved: {counts_file} and {meta_file}")
 
