@@ -21,6 +21,14 @@ To compare and evaluate tools that perform CCC inference directly on native simu
 | VGAE-CCI         | ✅        | Python   | [VGAE-CCI](https://github.com/zhangxiangz/VGAECCI) |
 
 
+## 🧬 Dataset Used
+### MERFISH 
+ - Conoral (https://www.nature.com/articles/s41586-024-08334-8#data-availability)
+ - S1R1 (https://info.vizgen.com/mouse-brain-map)
+
+### MOSTA
+ - Mouse brain (https://db.cngb.org/stomics/mosta/download/)
+
 ## Spatial Transcriptomics Format Converter
 
 A Python utility for converting spatial transcriptomics datasets between common formats (CSV, H5AD, TXT, and SpaCI-compatible CSV) with optional CPM + log1p normalization for raw counts. This tool ensures proper handling of spatial coordinates and metadata, making datasets ready for downstream analysis.
