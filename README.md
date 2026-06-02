@@ -13,12 +13,12 @@ To compare and evaluate tools that perform CCC inference directly on native simu
 
 ## 🧰 Tools Included
 
-| Tool           | ST-Native | Language | GitHub |
-|----------------|-----------|----------|--------|
-| COMMOT           | ✅        | Python   | [COMMOT](https://github.com/zcang/COMMOT) |
-| spaCI            | ✅        | Python   | [spaCI](https://github.com/QSong-github/spaCI) |
-| Spacia           | ✅        | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
-| VGAE-CCI         | ✅        | Python   | [VGAE-CCI](https://github.com/zhangxiangz/VGAECCI) |
+| Tool           | ST-Native | Methodology | Language | GitHub |
+|----------------|-----------|------------|----------|--------|
+| COMMOT           | ✅     | Optimal Transport  | Python   | [COMMOT](https://github.com/zcang/COMMOT) |
+| spaCI            | ✅     | Graph Neural Network | Python   | [spaCI](https://github.com/QSong-github/spaCI) |
+| Spacia           | ✅     | Bayesian Inference (MCMC) | Python   | [Spacia](https://github.com/yunguan-wang/Spacia/blob/main/README.md) |
+| VGAE-CCI         | ✅     | Variational Graph Autoencoder | Python   | [VGAE-CCI](https://github.com/zhangxiangz/VGAECCI) |
 
 
 ## 🧬 Dataset 
