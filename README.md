@@ -21,13 +21,29 @@ To compare and evaluate tools that perform CCC inference directly on native simu
 | VGAE-CCI         | ✅        | Python   | [VGAE-CCI](https://github.com/zhangxiangz/VGAECCI) |
 
 
-## 🧬 Dataset Used
-### MERFISH 
- - Conoral (https://www.nature.com/articles/s41586-024-08334-8#data-availability)
- - S1R1 (https://info.vizgen.com/mouse-brain-map)
+## 🧬 Dataset 
+### MERFISH Datasets
+ - Conoral mouse brain
+ - S1R1 mouse brain
+Source:
+ - https://www.nature.com/articles/s41586-024-08334-8#data-availability
+ - https://info.vizgen.com/mouse-brain-map
 
-### MOSTA
- - Mouse brain (https://db.cngb.org/stomics/mosta/download/)
+### MOSTA Dataset
+ - Mouse brain
+Source:
+ - https://db.cngb.org/stomics/mosta/download/
+
+## Installation
+Each tool was executed in an independent Conda environment to ensure reproducibility and avoid dependency conflicts.
+
+### Usage Examples
+
+```bash
+conda env create -f environments/ST_CCC_COMMOT.yml
+conda activate ST_CCC_COMMOT
+```
+Environment files are available in the repository.
 
 ## Spatial Transcriptomics Format Converter
 
