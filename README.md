@@ -4,12 +4,17 @@
 
 While many tools infer **cell–cell communication (CCC)** from single-cell RNA-seq (scRNA-seq), these approaches often ignore spatial proximity, leading to biologically incomplete results. To address this, a new wave of tools has emerged that work natively on spatial transcriptomics data.
 
-This benchmark systematically evaluates those native **Spatial Transcriptomis** tools that perform CCC inference directly from spatial transcriptomic datasets—without relying on external single-cell references.
+This benchmark systematically evaluates those native **Spatial Transcriptomics** tools that perform CCC inference directly from spatial transcriptomic datasets—without relying on external single-cell references.
 
 
 ## 📌 Objective
 
-To compare and evaluate tools that perform CCC inference directly on native simulation data and two kind of spatial transcriptomics (ST) Imageing (Vizgen) and Sequenceing data (MOSTA).
+The benchmark evaluates:
+
+ - Cell-type communication patterns.
+ - Number of inferred ligand-receptor interactions.
+ - Overlap of predicted ligand-receptor pairs between methods.
+ - Scalability across datasets of different sizes.
 
 ## 🧰 Tools Included
 
@@ -83,7 +88,11 @@ python Preprocessing_formats.py --from csv --to txt --expr counts.csv --meta met
 python Preprocessing_formats.py --from h5ad --to csv_spaCI --h5ad sample.h5ad --out output_dir --name sample_name 
 ```
 
+## Citation 
 
+If you use this repository, please cite:
+Akram Abushmais.
 
-Copyright (c) Akram Abushmais
+Comparative Analysis of Spatial Transcriptomics Approaches for Cell–Cell Communication.
+
 
