@@ -1,17 +1,14 @@
 # ST-CCC Benchmark
 <p align="left">
 
+  <!-- Core languages -->
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
-
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-
-  <img src="https://img.shields.io/badge/COMMOT-Spatial%20Communication-9cf?style=for-the-badge" alt="COMMOT">
-
-  <img src="https://img.shields.io/badge/spaCI-Spatial%20CCI-ff69b4?style=for-the-badge" alt="spaCI">
-
-  <img src="https://img.shields.io/badge/Spacia-Spatial%20Analysis-ffb347?style=for-the-badge" alt="Spacia">
-
-  <img src="https://img.shields.io/badge/VGAE--CCI-Graph%20Neural%20Network-lightgrey?style=for-the-badge" alt="VGAE-CCI">
+  <!-- Advanced spatial / ML tools -->
+  <img src="https://img.shields.io/badge/COMMOT-00BFA6?style=for-the-badge" alt="COMMOT">
+  <img src="https://img.shields.io/badge/spaCI-FF4D6D?style=for-the-badge" alt="spaCI">
+  <img src="https://img.shields.io/badge/Spacia-FFA500?style=for-the-badge" alt="Spacia">
+  <img src="https://img.shields.io/badge/VGAE--CCI-7B68EE?style=for-the-badge" alt="VGAE-CCI">
 
 </p>
 
