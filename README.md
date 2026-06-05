@@ -1,9 +1,18 @@
 # ST-CCC Benchmark
 <p align="left">
+
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
-  <img src="https://img.shields.io/badge/Seurat-Spatial%20Analysis-blueviolet?style=for-the-badge" alt="Seurat">
-  <img src="https://img.shields.io/badge/CellChat-Cell--Cell%20Communication-orange?style=for-the-badge" alt="CellChat">
-  <img src="https://img.shields.io/badge/Mouse-Brain-red?style=for-the-badge" alt="Mouse Brain">
+
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+
+  <img src="https://img.shields.io/badge/COMMOT-Spatial%20Communication-9cf?style=for-the-badge" alt="COMMOT">
+
+  <img src="https://img.shields.io/badge/spaCI-Spatial%20CCI-ff69b4?style=for-the-badge" alt="spaCI">
+
+  <img src="https://img.shields.io/badge/Spacia-Spatial%20Analysis-ffb347?style=for-the-badge" alt="Spacia">
+
+  <img src="https://img.shields.io/badge/VGAE--CCI-Graph%20Neural%20Network-lightgrey?style=for-the-badge" alt="VGAE-CCI">
+
 </p>
 
 **Spatial transcriptomics (ST)** technologies have transformed our understanding of gene expression in tissues by preserving spatial context. However, understanding how cells communicate with each other—especially through ligand-receptor interactions—in these spatial environments remains a computational challenge.
