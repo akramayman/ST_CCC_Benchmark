@@ -1,4 +1,4 @@
-# ST-CCC Benchmark
+# Comparative Analysis of Spatial Transcriptomics Approaches for Cell-Cell Communication
 <p align="left">
 
   <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
