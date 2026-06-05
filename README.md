@@ -1,4 +1,6 @@
 # ST-CCC Benchmark
+![R based](https://img.shields.io/badge/R-blue)
+![Python Package](https://img.shields.io/badge/Pythong-green)
 
 **Spatial transcriptomics (ST)** technologies have transformed our understanding of gene expression in tissues by preserving spatial context. However, understanding how cells communicate with each other—especially through ligand-receptor interactions—in these spatial environments remains a computational challenge.
 
