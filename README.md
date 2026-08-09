@@ -59,7 +59,17 @@ The benchmark evaluates:
 ## Installation
 Each tool was executed in an independent Conda environment to ensure reproducibility and avoid dependency conflicts.
 
-### Usage Examples
+## 🧰 Tools Result per sample
+
+| Tool           | Conoral mouse brain | S1R1 mouse brain | MOSTA Dataset | Grid Mcrioenvironments |
+|----------------|-----------|------------|----------|----------|
+| COMMOT           | ❌    |  ✅  |  ✅    | ✅    |
+| spaCI            | ❌    |  ✅ |  ❌    | ✅    |
+| Spacia           | ✅     |  ✅ |  ✅    | ✅    |
+| VGAE-CCI         | ❌     |  ❌  |  ❌   | ✅    |
+
+
+### Usage Examples to environments
 
 ```bash
 conda env create -f environments/ST_CCC_COMMOT.yml
