@@ -13,6 +13,8 @@
 
   <img src="https://img.shields.io/badge/VGAE--CCI-7B68EE?style=for-the-badge" alt="VGAE-CCI">
 
+  <img src="https://img.shields.io/badge/CellChat--CCI-ee68db?style=for-the-badge" alt="CellChat">
+
 </p>
 
 **Spatial transcriptomics (ST)** technologies have transformed our understanding of gene expression in tissues by preserving spatial context. However, understanding how cells communicate with each other—especially through ligand-receptor interactions—in these spatial environments remains a computational challenge.
