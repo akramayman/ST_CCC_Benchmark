@@ -56,9 +56,6 @@ The benchmark evaluates:
  Source:
  - https://db.cngb.org/stomics/mosta/download/
 
-## Installation
-Each tool was executed in an independent Conda environment to ensure reproducibility and avoid dependency conflicts.
-
 ## 🧰 Tools Result per sample
 
 | Tool           | Conoral mouse brain | S1R1 mouse brain | MOSTA Dataset | Grid Mcrioenvironments |
@@ -68,8 +65,10 @@ Each tool was executed in an independent Conda environment to ensure reproducibi
 | Spacia           | ✅     |  ✅ |  ✅    | ✅    |
 | VGAE-CCI         | ❌     |  ❌  |  ❌   | ✅    |
 
+## Environments Installation
+Each tool was executed in an independent Conda environment to ensure reproducibility and avoid dependency conflicts.
 
-### Usage Examples to environments
+### Usage Examples
 
 ```bash
 conda env create -f environments/ST_CCC_COMMOT.yml
