@@ -1,0 +1,7 @@
+tool_1,tool_2,n_shared_pairs,shared_pairs
+COMMOT,spaCI,0,
+COMMOT,Spacia,6,Astrocyte->Neuron-Inhibitory; Astrocyte->Oligodendrocyte; Neuron-Inhibitory->Astrocyte; Neuron-Inhibitory->Neuron-MSN; Neuron-Inhibitory->Oligodendrocyte; OPC->Endothelial
+COMMOT,VGAE-CCI,0,
+spaCI,Spacia,1,Pericyte->Oligodendrocyte
+spaCI,VGAE-CCI,4,Macrophage->Neutrophil; Macrophage->VSMC; Pericyte->Macrophage; VLMC->VSMC
+Spacia,VGAE-CCI,0,
